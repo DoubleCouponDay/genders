@@ -1,6 +1,6 @@
 [package]
 name = "genders"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Samuel <haveachillday@gmail.com>", "Izzy <izzy@lskh.io>"]
 description = "An extremely forward thinking Gender crate"
 license = "GLWPL"
