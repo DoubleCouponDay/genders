@@ -1,6 +1,7 @@
+use serde_derive::{Deserialize, Serialize};
 use std::fmt;
 
-#[derive(Debug, Eq, PartialEq, Clone, Copy)]
+#[derive(Debug, Eq, PartialEq, Clone, Copy, Ord, PartialOrd, Hash, Serialize, Deserialize)]
 pub enum Genders {
     Male,
     Female,

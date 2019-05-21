@@ -5,4 +5,7 @@ authors = ["Samuel <haveachillday@gmail.com>", "Izzy <izzy@lskh.io>"]
 description = "An extremely forward thinking Gender crate"
 license = "GLWPL"
 repository = "https://github.com/DoubleCouponDay/genders"
+edition = "2018"
 [dependencies]
+serde = "1.0.91"
+serde_derive = "1.0.91"

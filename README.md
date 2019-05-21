@@ -5,7 +5,9 @@
 [![dependency status](https://deps.rs/repo/github/DoubleCouponDay/genders/status.svg)](https://deps.rs/repo/github/DoubleCouponDay/genders)
 
 A forward thinking rust genders implementation
+
 ### Quick Example
+
 ```Rust
 use genders::Genders;
 
