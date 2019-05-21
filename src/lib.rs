@@ -1,5 +1,4 @@
-pub enum Genders
-{
+pub enum Genders {
     Male,
-    Female
+    Female,
 }
