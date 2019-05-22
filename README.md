@@ -9,8 +9,10 @@ A forward thinking rust genders implementation
 ### Quick Example
 
 ```Rust
-use genders::Genders;
+use genders::Gender;
 
-assert_eq!(Genders::Male, Genders::Male);   /* Will succeed */
-assert_eq!(Genders::Male, Genders::Female); /* WIll fail */
+assert_eq!(Gender::Male, Gender::Male);   /* Will succeed */
+assert_eq!(Gender::Male, Gender::Female); /* Will fail */
+
+assert!(Gender);
 ```
