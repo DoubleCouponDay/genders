@@ -17,8 +17,8 @@ assert!(Gender::Male>Gender::Female);	  /* Will succeed */
 
 for gender in Gender::iter() {
 	match gender {
-		Gender::Male => println!("{}: The Superior", gender),
-		Gender::Female => println!("{}: The Inferior", gender),
+		Gender::Male => println!("{}: The male gender", gender),
+		Gender::Female => println!("{}: The female gender", gender),
 	}
 }
 ```
