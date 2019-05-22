@@ -13,6 +13,12 @@ use genders::Gender;
 
 assert_eq!(Gender::Male, Gender::Male);   /* Will succeed */
 assert_eq!(Gender::Male, Gender::Female); /* Will fail */
+assert!(Gender::Male>Gender::Female);	  /* Will succeed */
 
-assert!(Gender);
+for gender in Gender::iter() {
+	match gender {
+		Gender::Male => println!("{}: The Superior", gender),
+		Gender::Female => println!("{}: The Inferior", gender),
+	}
+}
 ```
