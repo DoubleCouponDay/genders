@@ -1,17 +1,17 @@
 use serde_derive::{Deserialize, Serialize};
 use std::fmt;
 
-#[derive(Debug, Eq, PartialEq, Clone, Copy, Ord, PartialOrd, Hash, Serialize, Deserialize)]
-pub enum Genders {
+#[derive(Debug, Eq, PartialEq, Clone, Copy, Hash, Serialize, Deserialize)]
+pub enum Gender {
     Male,
     Female,
 }
 
-impl fmt::Display for Genders {
+impl fmt::Display for Gender {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let out = match self {
-            Genders::Male => "Male",
-            Genders::Female => "Female",
+            Gender::Male => "Male",
+            Gender::Female => "Female",
         };
 
         write!(f, "{}", out)
@@ -24,13 +24,13 @@ mod tests {
 
     #[test]
     fn equivalence_test() {
-        assert_eq!(Genders::Male, Genders::Male);
-        assert_eq!(Genders::Female, Genders::Female);
+        assert_eq!(Gender::Male, Gender::Male);
+        assert_eq!(Gender::Female, Gender::Female);
     }
 
     #[test]
     fn display_test() {
-        assert_eq!(String::from("Male"), format!("{}", Genders::Male));
-        assert_eq!(String::from("Female"), format!("{}", Genders::Female));
+        assert_eq!(String::from("Male"), format!("{}", Gender::Male));
+        assert_eq!(String::from("Female"), format!("{}", Gender::Female));
     }
 }
